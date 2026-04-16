@@ -57,7 +57,7 @@ public class EarthquakeService {
                 if (properties == null) continue;
 
                 //if magnitude < 2: skip
-                //if (magnitude == null || magnitude <= 2.0) continue;
+                if (magnitude == null || magnitude <= 2.0) continue;
 
                 Double magnitude = (Double) properties.get("mag");
 
